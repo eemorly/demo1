@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //2月统一看作28天
+/*a=4;
+a=a>0?4:0;
+if(a>0){
+    a=4;
+}else {
+    a=0;
+}*/
+        function a() {
+            /*
+            * 31    1 3 5 7 8 10 12
+            * 30    4 6 9 11
+            * 28    2
+            *
+            */
+            var m = document.getElementById("month").value;
+            m = parseInt("m");
+            if (m == 1 || m==3 || m==5 || m==7 || m==8 || m==10 || m==12) {
+
+                alert(31);
+            }
+            else if (m == 4 || m==6 || m==9 || m==11) {
+                alert(30);
+            }
+            else if (m == 2) {
+                alert(28);
+            }
+            else {
+                alert("youwu");
+            }
+        }
+
+    </script>
+</head>
+<body>
+<div>
+
+    <input type="number" id="month">
+    <input type="button" value="dian" onclick="a()">
+</div>
+</body>
+</html>

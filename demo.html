@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+//document.write(b);
+
+function getJieCheng() {
+    var a=document.getElementById("num").value;
+    var b=1;
+    /*for(a;a>1;a--){
+
+        b = b*a;
+
+    }*/
+    /*while(a>1){
+
+        b=b*a;
+        a--;
+
+    }*/
+    do {
+        b=b*a;
+        a--;
+
+    }
+    while(a>1);
+    //document.getElementById("num").value=b;
+    alert(b);
+}
+
+    </script>
+</head>
+<body>
+<br>
+<div>
+    <input type="number" id="num">
+    <<input type="button" value="计算" onclick="getJieCheng()">
+</div>
+</body>
+</html>
